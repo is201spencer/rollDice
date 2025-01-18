@@ -10,6 +10,8 @@ internal class Program
         Console.WriteLine("How many times do you want to roll: ");
         string rolls = Console.ReadLine();
         int numRolls = int.Parse(rolls);
+        Console.WriteLine();
+        Console.Write($"You rolled the dice {numRolls} times: ");
 
         // Gets the sum of the two dice rolled
         DiceRoller roller = new DiceRoller();
@@ -18,5 +20,7 @@ internal class Program
         // Histogram to display results
         Histogram histogram = new Histogram();
         histogram.Display(results, numRolls);
+
+        Console.WriteLine("\nThanks for playing! Goodbye!");
     }
 }

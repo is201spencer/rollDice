@@ -15,6 +15,7 @@ namespace rollDice
         {
             int[] frequencies = new int[13]; // Index 2 to 12 are relevant
 
+            // Based on the number of rolls, two dice will be rolled and the sum will be pushed into the array
             for (int i = 0; i < numberOfRolls; i++)
             {
                 int die1 = _dice.Roll();
